@@ -1,4 +1,118 @@
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
 h1 {
-  font: 400 79px "Roboto";
-  color: #1e1e1e;
+  font: 400 79px 'Roboto';
+  color: rgba(30, 30, 30, 1);
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 'item1 item2 item4'
+      'item1 item3 item4';
+  grid-template-columns: 575px 400px 180px;
+  grid-template-rows: 210px 210px;
+  grid-gap: 8px;
+  margin-bottom: 60px;
+}
+
+.wrapper div {
+  position: relative;
+}
+
+.wrapper .item1 {
+  grid-area: item1;
+}
+
+.wrapper .item1 .img {
+  background-image: url(./assets/macbook.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 576px;
+  height: 420px;
+}
+
+.wrapper .item2 {
+  grid-area: item2;
+}
+
+.wrapper .item2 .img {
+  background-image: url(./assets/boot.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 395px;
+  height: 207px;
+}
+
+.wrapper .item3 {
+  grid-area: item3;
+}
+
+.wrapper .item3 .img {
+  background-image: url(./assets/perfume.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 395px;
+  height: 207px;
+}
+
+.wrapper .item4 {
+  grid-area: item4;
+}
+
+.wrapper .item4 .img {
+  background-image: url(./assets/plant.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 181px;
+  height: 420px;
+}
+
+.wrapper .btn {
+  position: absolute;
+  left: 16px;
+  bottom: 20px;
+  font-size: 13px;
+  color: #AB87FF;
+  border: 1px solid #AB87FF;
+  border-radius: 24px;
+  padding: 6px 17px;
+  max-width: max-content;
+}
+
+.wrapper .btn:hover {
+  cursor: pointer;
+  background: #AB87FF;
+  color: #121212;
+}
+
+.viewAllBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10px 13px 16px;
+  background: #121212;
+  border-radius: 5px;
+  width: 170px;
+}
+
+.viewAllBtn p {
+  font: 400 15px 'Roboto';
+  color: rgba(255, 255, 255, 1);
+}
+
+.viewAllBtn .arrow {
+  background-image: url(./assets/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+}
+
+.viewAllBtn:hover {
+  cursor: pointer;
+  background: #AB87FF;
 }
