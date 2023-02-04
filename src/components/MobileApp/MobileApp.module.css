@@ -1,0 +1,40 @@
+.wrapper{
+    background-image: url(./assets/Group\ 2.png);
+    width: 1200px;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ .step-paragraf {
+    padding: 30px;
+}
+
+.wrapper .step-paragraf h1 {
+    font: 400 78px 'Roboto';
+    color: #1E1E1E;
+    width: 545px;
+    margin-bottom: 20px;
+}
+
+.wrapper .step-paragraf p{
+    font: 400 17px 'Roboto';
+    color: #686868;
+    width: 245px;
+}
+
+.see-paragraf{
+    padding:0 300px;
+}
+
+.wrapper .see-paragraf h2{
+    font: 400 50px 'Roboto';
+    color: #1E1E1E;
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+.wrapper .see-paragraf p {
+    font: 400 16px 'Roboto';
+    color: #686868;
+    width: 245px;
+}
